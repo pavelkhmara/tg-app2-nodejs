@@ -5,7 +5,7 @@ const cors = require('cors');
 
 // React + Node.js tg bot @react_node_web_app_bot
 const token = process.env.TELEGRAM_BOT_TOKEN;
-const webAppUrl = 'https://' + process.env.HOST + ':' + process.env.PORT;
+const webAppUrl = process.env.PUBLIC_URL;
 const bot = new TelegramBot(token, { polling: true });
 
 const app = express();
